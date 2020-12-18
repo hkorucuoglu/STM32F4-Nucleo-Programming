@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"hal_dac_001\startup_stm32f446xx.o"
+"hal_dac_001\main.o"
+"hal_dac_001\stm32f4xx_it.o"
+"hal_dac_001\stm32f4xx_hal_msp.o"
+"hal_dac_001\stm32f4xx_hal_dac.o"
+"hal_dac_001\stm32f4xx_hal_dac_ex.o"
+"hal_dac_001\stm32f4xx_hal_rcc.o"
+"hal_dac_001\stm32f4xx_hal_rcc_ex.o"
+"hal_dac_001\stm32f4xx_hal_flash.o"
+"hal_dac_001\stm32f4xx_hal_flash_ex.o"
+"hal_dac_001\stm32f4xx_hal_flash_ramfunc.o"
+"hal_dac_001\stm32f4xx_hal_gpio.o"
+"hal_dac_001\stm32f4xx_hal_dma_ex.o"
+"hal_dac_001\stm32f4xx_hal_dma.o"
+"hal_dac_001\stm32f4xx_hal_pwr.o"
+"hal_dac_001\stm32f4xx_hal_pwr_ex.o"
+"hal_dac_001\stm32f4xx_hal_cortex.o"
+"hal_dac_001\stm32f4xx_hal.o"
+"hal_dac_001\stm32f4xx_hal_exti.o"
+"hal_dac_001\stm32f4xx_hal_tim.o"
+"hal_dac_001\stm32f4xx_hal_tim_ex.o"
+"hal_dac_001\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "HAL_DAC_001\HAL_DAC_001.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL_DAC_001.map" -o HAL_DAC_001\HAL_DAC_001.axf

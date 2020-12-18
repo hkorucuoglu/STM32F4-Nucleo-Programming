@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"hal_adc_001(multi_ch_polling_method)\startup_stm32f446xx.o"
+"hal_adc_001(multi_ch_polling_method)\main.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_it.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_msp.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_adc.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_adc_ex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_rcc.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_rcc_ex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_flash.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_flash_ex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_flash_ramfunc.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_gpio.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_dma_ex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_dma.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_pwr.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_pwr_ex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_cortex.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_exti.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_tim.o"
+"hal_adc_001(multi_ch_polling_method)\stm32f4xx_hal_tim_ex.o"
+"hal_adc_001(multi_ch_polling_method)\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "HAL_ADC_001(MULTI_CH_POLLING_METHOD)\HAL_ADC_001(MULTI_CH_POLLING_METHOD).sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL_ADC_001(MULTI_CH_POLLING_METHOD).map" -o HAL_ADC_001(MULTI_CH_POLLING_METHOD)\HAL_ADC_001(MULTI_CH_POLLING_METHOD).axf

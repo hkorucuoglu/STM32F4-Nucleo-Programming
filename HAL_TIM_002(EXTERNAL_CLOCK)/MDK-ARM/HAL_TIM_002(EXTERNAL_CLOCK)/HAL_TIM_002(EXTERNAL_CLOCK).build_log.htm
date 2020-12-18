@@ -1,0 +1,148 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: oðuzhan ozie, asjfasjd, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\Keil(BASIC PRACTICE)\HAL_TIM_002(EXTERNAL_CLOCK)\MDK-ARM\HAL_TIM_002(EXTERNAL_CLOCK).uvprojx
+Project File Date:  03/23/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'HAL_TIM_002(EXTERNAL_CLOCK)'
+assembling startup_stm32f446xx.s...
+compiling main.c...
+../Src/main.c(124): error:  #65: expected a ";"
+  {
+../Src/main.c(146): warning:  #12-D: parsing restarts here after previous syntax error
+      Error_Handler();
+../Src/main.c(150): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+../Src/main.c(150): error:  #65: expected a ";"
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+../Src/main.c(152): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(152): error:  #65: expected a ";"
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(153): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV4;
+../Src/main.c(153): error:  #65: expected a ";"
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV4;
+../Src/main.c(154): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(154): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(155): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(155): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(157): error:  #169: expected a declaration
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+../Src/main.c(191): warning:  #12-D: parsing restarts here after previous syntax error
+    sSlaveConfig.SlaveMode = TIM_SLAVEMODE_EXTERNAL1;
+../Src/main.c(192): error:  #77-D: this declaration has no storage class or type specifier
+    sSlaveConfig.InputTrigger = TIM_TS_TI1FP1;
+../Src/main.c(192): error:  #65: expected a ";"
+    sSlaveConfig.InputTrigger = TIM_TS_TI1FP1;
+../Src/main.c(193): error:  #77-D: this declaration has no storage class or type specifier
+    sSlaveConfig.TriggerPolarity = TIM_TRIGGERPOLARITY_RISING;
+../Src/main.c(193): error:  #65: expected a ";"
+    sSlaveConfig.TriggerPolarity = TIM_TRIGGERPOLARITY_RISING;
+../Src/main.c(194): error:  #77-D: this declaration has no storage class or type specifier
+    sSlaveConfig.TriggerFilter = 15;
+../Src/main.c(194): error:  #65: expected a ";"
+    sSlaveConfig.TriggerFilter = 15;
+../Src/main.c(195): error:  #169: expected a declaration
+    if (HAL_TIM_SlaveConfigSynchro(&htim2, &sSlaveConfig) != HAL_OK)
+../Src/main.c(199): warning:  #12-D: parsing restarts here after previous syntax error
+    sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+../Src/main.c(200): error:  #77-D: this declaration has no storage class or type specifier
+    sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+../Src/main.c(200): error:  #65: expected a ";"
+    sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+../Src/main.c(201): error:  #169: expected a declaration
+    if (HAL_TIMEx_MasterConfigSynchronization(&htim2, &sMasterConfig) != HAL_OK)
+../Src/main.c(271): warning:  #12-D: parsing restarts here after previous syntax error
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+../Src/main.c(272): error:  #77-D: this declaration has no storage class or type specifier
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Src/main.c(272): error:  #65: expected a ";"
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+../Src/main.c(273): error:  #79: expected a type specifier
+    HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+../Src/main.c(273): error:  #79: expected a type specifier
+    HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+../Src/main.c(273): error:  #260-D: explicit type is missing ("int" assumed)
+    HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+../Src/main.c(273): error:  #147: declaration is incompatible with "void HAL_GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)"  (declared at line 225 of "../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h")
+    HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+../Src/main.c(275): error:  #169: expected a declaration
+  }
+../Src/main.c(310): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+../Src/main.c(56): error:  #114: function "MX_GPIO_Init"  was referenced but not defined
+  static void MX_GPIO_Init(void);
+../Src/main.c: 5 warnings, 30 errors
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_uart.c...
+"HAL_TIM_002(EXTERNAL_CLOCK)\HAL_TIM_002(EXTERNAL_CLOCK).axf" - 30 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_HAL_TIM_002_EXTERNAL_CLOCK_
+  C:\Users\ozie\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\ozie\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Target not created.
+Build Time Elapsed:  00:00:24
+</pre>
+</body>
+</html>

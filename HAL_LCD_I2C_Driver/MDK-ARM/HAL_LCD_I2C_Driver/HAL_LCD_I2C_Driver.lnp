@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"hal_lcd_i2c_driver\startup_stm32f446xx.o"
+"hal_lcd_i2c_driver\main.o"
+"hal_lcd_i2c_driver\stm32f4xx_it.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_msp.o"
+"hal_lcd_i2c_driver\lcd_i2c.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_i2c.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_i2c_ex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_rcc.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_rcc_ex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_flash.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_flash_ex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_flash_ramfunc.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_gpio.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_dma_ex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_dma.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_pwr.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_pwr_ex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_cortex.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_exti.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_tim.o"
+"hal_lcd_i2c_driver\stm32f4xx_hal_tim_ex.o"
+"hal_lcd_i2c_driver\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "HAL_LCD_I2C_Driver\HAL_LCD_I2C_Driver.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL_LCD_I2C_Driver.map" -o HAL_LCD_I2C_Driver\HAL_LCD_I2C_Driver.axf
